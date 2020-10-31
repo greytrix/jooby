@@ -1,5 +1,6 @@
 type Query {
     bookById(id: ID): Book
+    customers : [Customer]
 }
 
 type Book {
@@ -13,4 +14,11 @@ type Author {
     id: ID
     firstName: String
     lastName: String
+}
+
+type Customer {
+    rid :String
+    CustomerNo: String
+    name: String
+    CurrencyCode: String
 }
